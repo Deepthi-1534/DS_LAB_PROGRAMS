@@ -168,7 +168,8 @@ int main() {
     NODE first = NULL;
     int choice, item, pos;
 
-    do {
+    while(1)
+    {
         printf("\nMenu:\n");
         printf("1. Insert at Beginning\n");
         printf("2. Insert at End\n");
@@ -212,11 +213,11 @@ int main() {
                 display(first);
                 break;
             case 8:
-                break;
+                exit(0);
             default:
                 printf("Invalid choice. \n");
         }
-    } while (choice != 8);
+    } 
 
     return 0;
 }
